@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+    color: black;
+    cursor: pointer;
+    transition: color ease .1s;
+
+    &:hover {
+      color: rgb(84, 194, 94);
+    }
+  }
+
+  .pageNumbers {
+    display: flex;
+    
+    .pageNumber {
+      margin: 0 8px;
+    }
+
+    .pageNumberActive {
+      color: gray;
+    }
+  }
+}

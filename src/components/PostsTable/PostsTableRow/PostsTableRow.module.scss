@@ -1,0 +1,27 @@
+@import '../../../styles/variables.scss';
+
+.postsTableRow {
+  display: grid;
+  grid-template-columns: 1fr 5fr 6fr;
+
+  .postsTableRowId,
+  .postsTableRowTitle,
+  .postsTableRowBody {
+    display: flex;
+    align-items: center;
+    padding: 15px 8px;
+  }
+
+  .postsTableRowId {
+    justify-content: center;
+  }
+
+  & > div {
+    border-left: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  & div:last-child {
+    border-right: 1px solid $borderColor;
+  }
+}
