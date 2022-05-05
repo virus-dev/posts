@@ -22,8 +22,8 @@ const PostsTable = () => {
   }
 
   useEffect(() => {
-    dispatch(fetchPosts());
-  }, [])
+      dispatch(fetchPosts());
+  }, [dispatch])
 
   return (
     <>

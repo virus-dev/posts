@@ -22,7 +22,7 @@ const PagePosts: React.FC = () => {
       return;
     }
 
-    if (pageNumber && ((Number(pageNumber) < 1) || (count < (Number(pageNumber) * limit - limit)))) {
+    if (pageNumber && ((Number(pageNumber) < 1) || (count <= (Number(pageNumber) * limit - limit)))) {
       navigate(RouteNames.MAIN);
       const { changePage } = postSlice.actions;
       dispatch(changePage(1));
