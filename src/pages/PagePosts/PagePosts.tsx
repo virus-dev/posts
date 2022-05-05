@@ -13,7 +13,7 @@ const PagePosts: React.FC = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const { pageNumber } = useParams();
-  const { count, limit, isLoading } = useAppSelector(({ postsReducer }) => postsReducer)
+  const { count, limit, isLoading } = useAppSelector(({ postsReducer }) => postsReducer);
 
   useEffect(() => {
     const { changePage } = postSlice.actions;

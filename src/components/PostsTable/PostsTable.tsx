@@ -21,14 +21,6 @@ const PostsTable = () => {
     navigate('/1')
   }
 
-  // useEffect(() => {
-  //   if (pageNumber && (Number(pageNumber) < 1 || count < (Number(pageNumber) * limit))) {
-  //     navigate(RouteNames.MAIN);
-  //     const { changePage } = postSlice.actions;
-  //     dispatch(changePage(1));
-  //   }
-  // }, [count, dispatch, limit, navigate, pageNumber]);
-
   useEffect(() => {
     dispatch(fetchPosts());
   }, [dispatch])
